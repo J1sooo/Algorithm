@@ -1,7 +1,1 @@
-def solution(money):
-    answer = []
-    count=0
-    while money>=5500:
-        money-=5500
-        count+=1
-    return [count,money]
+solution=lambda x:[x//5500,x%5500]
