@@ -1,6 +1,2 @@
 def solution(hp):
-    answer = 0
-    for i in range(5,0,-2):
-        answer+=hp//i
-        hp%=i
-    return answer
+    return hp // 5 + (hp % 5 // 3) + ((hp % 5) % 3)
