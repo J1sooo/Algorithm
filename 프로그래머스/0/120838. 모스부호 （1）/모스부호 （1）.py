@@ -6,4 +6,7 @@ def solution(letter):
     '...':'s','-':'t','..-':'u','...-':'v','.--':'w','-..-':'x',
     '-.--':'y','--..':'z'
     }
-    return ''.join(morse[i]for i in letter.split())
+    answer = ''
+    for i in letter.split():
+        answer+=morse[i]
+    return answer
