@@ -8,7 +8,5 @@ def solution(letter):
     }
     answer = ''
     for i in letter.split():
-        for m,j in morse.items():
-            if i==m:
-                answer+=j
+        answer+=morse[i]
     return answer
