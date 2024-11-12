@@ -1,7 +1,3 @@
 def solution(sides):
-    sides=sorted(sides)
-    a,b,c=sides
-    if a+b>c:
-        return 1
-    else:
-        return 2
+    sides.sort()
+    return 1 if sides[0]+sides[1]>sides[2] else 2
